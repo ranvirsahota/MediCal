@@ -1,8 +1,12 @@
-package com.example.medical;
+//Name:
+
+package com.example.medical.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.medical.R;
 
 public class Calender extends AppCompatActivity {
 
