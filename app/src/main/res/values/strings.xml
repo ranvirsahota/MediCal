@@ -10,5 +10,6 @@
     <string name="reset_pass">Reset Password</string>
     <string name="new_pass">New Password</string>
     <string name="confirm_pass">Confirm Password</string>
+    <string name="password">Password</string>
 
 </resources>
