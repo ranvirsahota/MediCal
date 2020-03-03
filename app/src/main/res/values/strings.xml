@@ -11,5 +11,6 @@
     <string name="new_pass">New Password</string>
     <string name="confirm_pass">Confirm Password</string>
     <string name="password">Password</string>
+    <string name="events_list">List of Events</string>
 
 </resources>
