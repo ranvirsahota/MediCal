@@ -1,82 +1,78 @@
 package Controllers;
-
-
+import android.content.Context;
+import android.util.Log;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Dictionary;
-import java.util.Enumeration;
 
 public class FileOperations {
     private File events;
 
-
-    public void test(String name, String date) {
-        events = new File (date);
-        if (create()) { write(); } else { open();}
+    //need to re-name test methods to something more appropriate
+    public void test(Context context, String name, String date) {
+        events = new File (context.getExternalFilesDir(null), date);
+        if (!create()) {
+            events = events.getAbsoluteFile();
+            Log.d("PROGRESS", "CHECK");
+        }
+        write(name, date);
+        read();
     }
 
-    public Boolean create() {
+    //return a Dictionary received from read() so UI can easily pull values to display
+    public void test(String date) {
+        events = new File(date);
+        events = events.getAbsoluteFile();
+        //return read();
+        read();
+    }
 
+
+    public Boolean create() {
+        try { return events.createNewFile(); }
+        catch (IOException error) {
+            Log.d("ERROR", error.getMessage());
+
+            return false;
+        }
+    }
+
+    //File Text Structure
+    //name.date.
+    private Boolean write(String name, String date) {
         try {
-            events.createNewFile();
+
+            FileWriter writer = new FileWriter(events);
+            String data = name + "." + date + "/n";
+            writer.write(data);
+            writer.close();
         }
         catch (IOException error) {
+            Log.d("ERROR", error.getMessage());
             return false;
         }
         return true;
     }
 
-    private Boolean update() {
-
-        return false;
+    //testing file can be read() successfully
+    private void read() {
+        int data = 0;
+        try {
+            FileReader reader = new FileReader(events);
+            do {
+                try {
+                    data = reader.read();
+                } catch (IOException error) {
+                    Log.d("ERROR", error.getMessage());
+                }
+                Log.e("DATA", Integer.toString(data));
+            }
+            while (data != -1);
+            reader.close();
+        }
+        catch (IOException error) {
+            Log.d("ERROR", error.getMessage());
+        }
     }
-
-    private void write() {
-
-    }
-
-    private void open() {
-
-    }
-
-    public Dictionary read() {
-        Dictionary data = new Dictionary() {
-            @Override
-            public int size() {
-                return 0;
-            }
-
-            @Override
-            public boolean isEmpty() {
-                return false;
-            }
-
-            @Override
-            public Enumeration keys() {
-                return null;
-            }
-
-            @Override
-            public Enumeration elements() {
-                return null;
-            }
-
-            @Override
-            public Object get(Object key) {
-                return null;
-            }
-
-            @Override
-            public Object put(Object key, Object value) {
-                return null;
-            }
-
-            @Override
-            public Object remove(Object key) {
-                return null;
-            }
-        };
-        return data;
-    }
-
 }
