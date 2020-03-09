@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MediCal</string>
+    <string name="text">Strive for your better health.</string>
+    <string name="logo">MediCal</string>
+    <string name="ambulance_icon">Ambulance Icon</string>
+    <string name="add_event_btn">Add Event</string>
+    <string name="terms_conditions">Terms \&amp; Conditions</string>
+    <string name="submit">Submit</string>
+    <string name="home_btn">Back to Home Page</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="events_list">List of Events</string>
+    <string name="email">E-Mail</string>
+    <string name="login">Login</string>
+    <string name="no_acc">Dont have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_pass">forgotten password?</string>
 </resources>
