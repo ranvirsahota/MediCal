@@ -18,4 +18,5 @@
     <string name="no_acc">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="forgot_pass">Forgotten password?</string>
+    <string name="confirm_account">Enter your E-mail to reset password.</string>
 </resources>
