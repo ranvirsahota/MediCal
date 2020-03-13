@@ -36,7 +36,7 @@ public class ListOfEvents extends AppCompatActivity {
     }
     public void homeButton (View view){
 
-        Intent noClicked = new Intent( ListOfEvents.this, Calender.class);
-        startActivity(noClicked);
+        Intent homeButt = new Intent( ListOfEvents.this, Calender.class);
+        startActivity(homeButt);
     }
 }
