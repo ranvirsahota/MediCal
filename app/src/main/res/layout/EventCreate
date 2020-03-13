@@ -1,3 +1,34 @@
 //Authour: Sam
 
 //Check srs documentaion for event create
+
+//Code not yet fully tested
+/*
+package com.example.myapplication;
+
+class TestEvent {
+    //Variables discribed in the eventcreate design document input list
+   int Date_Day = 0;
+   int Date_Month= 0;
+   int Date_Year = 0;
+   //Look at pallet at home for time variable  DO NOT KEEP AS INT
+    int Time = 1234;
+    String AdditionalInformation = "TestStart Additional Info TestEND";
+    String Title = "Test Title";
+
+    //Notification reminder may need to be a different data type
+    String NotificationType = "TestStart SMS TestEnd";
+}
+
+/* When A Event is created successfully this class should generate and return a success message to
+be displayed to the user */
+class TestPass
+{
+    public Success(Boolean Pass){
+        String Message = "Event created for " + Date_Day + Date_Month + Date_year;
+        return Message;
+    }
+}
+
+
+*/
