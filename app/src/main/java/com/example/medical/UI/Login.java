@@ -22,4 +22,10 @@ public class Login extends AppCompatActivity {
         Intent homeButt = new Intent( Login.this, Calender.class);
         startActivity(homeButt);
     }
+
+    public void resetPass (View view){
+
+        Intent passReset = new Intent( Login.this, ConfirmEmail.class);
+        startActivity(passReset);
+    }
 }
