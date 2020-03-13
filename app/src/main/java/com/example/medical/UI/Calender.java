@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CalendarView;
 import com.example.medical.R;
 
@@ -28,8 +29,11 @@ public class Calender extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
+    public void logIn (View view){
 
-
-
+        Intent signIn = new Intent( Calender.this, Login.class);
+        startActivity(signIn);
+    }
 }
