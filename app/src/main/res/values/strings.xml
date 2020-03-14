@@ -17,4 +17,8 @@
     <string name="no_acc">Dont have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="forgot_pass">forgotten password?</string>
+    <string name="username">Username</string>
+    <string name="dob">Date of Birth</string>
+    <string name="address">Address</string>
+    <string name="Register">Register your account</string>
 </resources>
