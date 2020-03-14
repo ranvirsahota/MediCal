@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/textView_name"
         android:layout_margin="20dp"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/textView_name" />
 
     <TextView
         android:id="@+id/textView_date"
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/textView_title"
         android:layout_margin="20dp"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/textView_title" />
 
 </RelativeLayout>
