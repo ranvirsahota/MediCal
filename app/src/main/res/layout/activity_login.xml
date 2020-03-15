@@ -191,7 +191,7 @@
         android:layout_width="198dp"
         android:layout_height="40dp"
         android:background="#B3B0B2"
-        android:textColour="@android:colour/holo_red_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:text="@string/home_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -199,5 +199,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.96" />
-    
+
 </androidx.constraintlayout.widget.ConstraintLayout>
