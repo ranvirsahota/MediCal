@@ -36,7 +36,7 @@ public class ListOfEvents extends AppCompatActivity {
     }
     public void homeButton (View view){
 
-        Intent homeButt = new Intent( ListOfEvents.this, Calender.class);
+        Intent homeButt = new Intent( ListOfEvents.this, homePage.class);
         startActivity(homeButt);
     }
 }

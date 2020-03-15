@@ -31,9 +31,10 @@ public class Calender extends AppCompatActivity {
         });
 
     }
-    public void logIn (View view){
+    public void homeButton (View view){
 
-        Intent signIn = new Intent( Calender.this, Login.class);
-        startActivity(signIn);
+        Intent homeButt = new Intent( Calender.this, homePage.class);
+        startActivity(homeButt);
     }
+
 }

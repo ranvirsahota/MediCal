@@ -19,7 +19,7 @@ public class Login extends AppCompatActivity {
     }
     public void homeButton (View view){
 
-        Intent homeButt = new Intent( Login.this, Calender.class);
+        Intent homeButt = new Intent( Login.this, homePage.class);
         startActivity(homeButt);
     }
 
