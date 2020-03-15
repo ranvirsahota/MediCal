@@ -17,7 +17,7 @@ public class ConfirmEmail extends AppCompatActivity {
 
     public void homeButton (View view){
 
-        Intent homeButt = new Intent( ConfirmEmail.this, Calender.class);
+        Intent homeButt = new Intent( ConfirmEmail.this, homePage.class);
         startActivity(homeButt);
     }
 }
