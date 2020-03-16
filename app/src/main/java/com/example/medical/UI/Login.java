@@ -28,4 +28,10 @@ public class Login extends AppCompatActivity {
         Intent passReset = new Intent( Login.this, ConfirmEmail.class);
         startActivity(passReset);
     }
+
+    public void signUp (View view){
+
+        Intent passReset = new Intent( Login.this, Registration.class);
+        startActivity(passReset);
+    }
 }
