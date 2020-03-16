@@ -92,6 +92,7 @@
         android:layout_height="49dp"
         android:background="#600371"
         android:gravity="center"
+        android:onClick="signUp"
         android:text="@string/sign_up"
         android:textColor="@android:color/background_light"
         android:textIsSelectable="true"
