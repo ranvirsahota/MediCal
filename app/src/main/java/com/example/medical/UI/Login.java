@@ -31,7 +31,7 @@ public class Login extends AppCompatActivity {
 
     public void signUp (View view){
 
-        Intent passReset = new Intent( Login.this, Registration.class);
-        startActivity(passReset);
+        Intent signButt = new Intent( Login.this, Registration.class);
+        startActivity(signButt);
     }
 }
