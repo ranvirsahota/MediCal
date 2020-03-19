@@ -34,9 +34,9 @@ public class ListOfEvents extends AppCompatActivity {
         listView.setAdapter(mAdapter);
 
     }
-    public void homeButton (View view){
+    public void backButton (View view){
 
-        Intent homeButt = new Intent( ListOfEvents.this, homePage.class);
-        startActivity(homeButt);
+        Intent backButt = new Intent( ListOfEvents.this, Calender.class);
+        startActivity(backButt);
     }
 }
