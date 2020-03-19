@@ -15,9 +15,9 @@ public class ConfirmEmail extends AppCompatActivity {
         setContentView(R.layout.confirm_email);
     }
 
-    public void homeButton (View view){
+    public void backButton (View view){
 
-        Intent homeButt = new Intent( ConfirmEmail.this, homePage.class);
-        startActivity(homeButt);
+        Intent backButt = new Intent( ConfirmEmail.this, Login.class);
+        startActivity(backButt);
     }
 }
