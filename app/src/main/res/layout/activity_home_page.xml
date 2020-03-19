@@ -66,13 +66,14 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/signin"
+        android:contentDescription="@string/signIn"
+        android:onClick="signIn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584"
-        android:contentDescription="@string/signIn" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -91,14 +92,15 @@
         android:id="@+id/imageButton6"
         android:layout_width="100dp"
         android:layout_height="112dp"
+        android:contentDescription="@string/calendar"
+        android:onClick="calendarBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31"
-        app:srcCompat="@drawable/calendar"
-        android:contentDescription="@string/calendar" />
+        app:srcCompat="@drawable/calendar" />
 
     <TextView
         android:id="@+id/textView10"
