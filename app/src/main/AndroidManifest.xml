@@ -21,6 +21,8 @@
         <activity android:name=".UI.ResetPassword" />
         <activity android:name=".UI.Login" />
         <activity android:name=".UI.Calender" />
+        <activity android:name=".UI.EditEvent"/>
+        <activity android:name=".UI.CreateEvent"/>
     </application>
 
 </manifest>
