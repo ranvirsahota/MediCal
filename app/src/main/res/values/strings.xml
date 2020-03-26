@@ -32,4 +32,16 @@
     <string name="back_to_login">Back to Login</string>
     <string name="connect_account">Connect to your account</string>
     <string name="enter_new_pass">Enter your new password</string>
+    <string name="create_event">Create a new Event</string>
+    <string name="title">Title of the Event*</string>
+    <string name="date">Date*</string>
+    <string name="time">Time*</string>
+    <string name="notes">Notes</string>
+    <string name="mandatoryFields">Fields marked with * are mandatory</string>
+    <string name="inputTitle">Input a title here</string>
+    <string name="inputDate">Input a date here</string>
+    <string name="inputTime">Input a time here</string>
+    <string name="inputNotes">Input any notes here</string>
+    <string name="snooze">Snooze</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
 </resources>
