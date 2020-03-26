@@ -3,7 +3,7 @@ package Database;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-@Entity
+@Entity(tableName = "prescription_reminders")
 public class Prescription_Reminders {
     @PrimaryKey
     public int prescriptionId;
