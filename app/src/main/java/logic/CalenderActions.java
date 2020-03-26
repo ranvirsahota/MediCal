@@ -1,5 +1,5 @@
 //Name: Sam
-package Controllers;
+package Logic;
 
 public class CalenderActions {
 }
