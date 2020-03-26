@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.CreateEvent">
+    tools:context=".UI.EditEvent">
 
     <TextView
         android:id="@+id/textView18"
@@ -24,7 +24,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/create_event"
+        android:text="@string/edit_event"
         android:textColor="#00796B"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -108,7 +108,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/inputTitle"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +115,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.249"
-        android:autofillHints="title of the event" />
+        android:autofillHints="title of the event"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/editText9"
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        android:hint="@string/inputDate"
+        tools:ignore="LabelFor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.919"
@@ -139,7 +139,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="time"
-        android:hint="@string/inputTime"
+        tools:ignore="LabelFor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.919"
@@ -157,7 +157,7 @@
         android:inputType="textMultiLine"
         android:maxLength="50"
         android:maxLines="3"
-        android:hint="@string/inputNotes"
+        tools:ignore="LabelFor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.919"
@@ -201,7 +201,7 @@
         android:layout_height="49dp"
         android:background="@android:color/holo_blue_bright"
         android:gravity="center"
-        android:text="@string/submit"
+        android:text="@string/edit_event"
         android:textIsSelectable="true"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -210,5 +210,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.879" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
