@@ -9,20 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.homePage">
+        <activity android:name=".UI.Accessibility"/>
+        <activity android:name=".UI.CreateEvent">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".UI.ConfirmEmail" />
         <activity android:name=".UI.Registration" />
         <activity android:name=".UI.ListOfEvents" />
         <activity android:name=".UI.ResetPassword" />
         <activity android:name=".UI.Login" />
         <activity android:name=".UI.Calender" />
-        <activity android:name=".UI.EditEvent"/>
-        <activity android:name=".UI.CreateEvent"/>
+        <activity android:name=".UI.EditEvent" />
+        <activity android:name=".UI.homePage" />
     </application>
 
 </manifest>
