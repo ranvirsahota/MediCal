@@ -6,13 +6,13 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 
 import database.entity.data.Accounts;
-import database.entity.data.Event;
+
 
 @Dao
 public interface AccountsDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert (Accounts event);
+    void insert (Accounts accounts);
 
     @Delete()
-    void delete (Event event);
+    void delete (Accounts accounts);
 }
