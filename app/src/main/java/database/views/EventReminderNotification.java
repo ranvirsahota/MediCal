@@ -3,7 +3,9 @@ package database.views;
 import androidx.room.DatabaseView;
 
 //Select columns from the described table to fill variables
-@DatabaseView("")
+@DatabaseView("SELECT event_reminder.event_id, event_reminder.event_name, event_reminder.location, " +
+        "event_reminder.notes, event_reminder.time, event_reminder.date, notification.sms, notification.alarm_1,notification.alarm_2,notification.alarm_3,notification.notification_1,notification.notification_2,notification.notification_3 " +
+        "FROM event_reminder INNER JOIN event ON event.event_id = event_reminder.event_id INNER JOIN notification ON event.event_id = notification.event_id")
 public class EventReminderNotification {
 
     public EventReminderNotification(int eventReminderID, String eventName, String location, String notes, int time, int date,
