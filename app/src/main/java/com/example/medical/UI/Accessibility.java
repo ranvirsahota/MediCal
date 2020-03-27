@@ -21,15 +21,18 @@ public class Accessibility extends AppCompatActivity {
 
     public void ChangeTextReg(View v)
     {
-        Button ChangeReg = (Button) findViewById(R.id.button);
+        Button ChangeReg = (Button) findViewById(R.id.button10);
         int[] ButtonIDArray = new int[]
-                {R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};
+                /*{R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};*/
+                {R.id.button7,R.id.button8,R.id.button9,R.id.button10};
         int[] HeaderIDArray = new int[]
-                {R.id.textView,R.id.textView2,R.id.textView22};
+                /*{R.id.textView,R.id.textView2,R.id.textView22};*/
+                {R.id.textView22};
         int[] BodyIDArray = new int[]
-                {R.id.textView3,R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,R.id.textView9,R.id.textView10,
+                {R.id.textView20};
+                /*{R.id.textView3,R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,R.id.textView9,R.id.textView10,
                         R.id.textView11,R.id.textView12,R.id.textView13,R.id.textView14,R.id.textView15,R.id.textView16,R.id.textView17,R.id.textView18,R.id.textView19,R.id.textView20,
-                        R.id.textView21,R.id.textView23,R.id.textView24};
+                        R.id.textView21,R.id.textView23,R.id.textView24};*/
 
         for (int value : ButtonIDArray) {
             Button but = (Button) findViewById(value);
@@ -49,15 +52,18 @@ public class Accessibility extends AppCompatActivity {
 
     public void ChangeTextLarge(View v)
     {
-        Button ChangeLarge = (Button) findViewById(R.id.button4);
+        Button ChangeLarge = (Button) findViewById(R.id.button9);
         int[] ButtonIDArray = new int[]
-                {R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};
+                /*{R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};*/
+                {R.id.button7,R.id.button8,R.id.button9,R.id.button10};
         int[] HeaderIDArray = new int[]
-                {R.id.textView,R.id.textView2,R.id.textView22};
+                /*{R.id.textView,R.id.textView2,R.id.textView22};*/
+                {R.id.textView22};
         int[] BodyIDArray = new int[]
-                {R.id.textView3,R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,R.id.textView9,R.id.textView10,
+                {R.id.textView20};
+                /*{R.id.textView3,R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,R.id.textView9,R.id.textView10,
                         R.id.textView11,R.id.textView12,R.id.textView13,R.id.textView14,R.id.textView15,R.id.textView16,R.id.textView17,R.id.textView18,R.id.textView19,R.id.textView20,
-                        R.id.textView21,R.id.textView23,R.id.textView24};
+                        R.id.textView21,R.id.textView23,R.id.textView24};*/
 
         for (int value : ButtonIDArray) {
             Button but = (Button) findViewById(value);
@@ -76,15 +82,18 @@ public class Accessibility extends AppCompatActivity {
 
     public void ChangeTextExtra(View v)
     {
-        Button ChangeExtra = (Button) findViewById(R.id.button3);
+        Button ChangeExtra = (Button) findViewById(R.id.button7);
         int[] ButtonIDArray = new int[]
-                {R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};
+                /*{R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};*/
+                {R.id.button7,R.id.button8,R.id.button9,R.id.button10};
         int[] HeaderIDArray = new int[]
-                {R.id.textView,R.id.textView2,R.id.textView22};
+                /*{R.id.textView,R.id.textView2,R.id.textView22};*/
+                {R.id.textView22};
         int[] BodyIDArray = new int[]
-                {R.id.textView3,R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,R.id.textView9,R.id.textView10,
+                {R.id.textView20};
+                /*{R.id.textView3,R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,R.id.textView9,R.id.textView10,
                         R.id.textView11,R.id.textView12,R.id.textView13,R.id.textView14,R.id.textView15,R.id.textView16,R.id.textView17,R.id.textView18,R.id.textView19,R.id.textView20,
-                        R.id.textView21,R.id.textView23,R.id.textView24};
+                        R.id.textView21,R.id.textView23,R.id.textView24};*/
 
         for (int value : ButtonIDArray) {
             Button but = (Button) findViewById(value);
