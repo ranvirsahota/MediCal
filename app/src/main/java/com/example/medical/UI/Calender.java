@@ -42,11 +42,6 @@ public class Calender extends AppCompatActivity {
         Intent eventsButt = new Intent( Calender.this, ListOfEvents.class);
         startActivity(eventsButt);
     }
-
-    public void eventsButton (View view){
-
-        Intent eventsButt = new Intent( Calender.this, ListOfEvents.class);
-        startActivity(eventsButt);
-    }
+    
 
 }
