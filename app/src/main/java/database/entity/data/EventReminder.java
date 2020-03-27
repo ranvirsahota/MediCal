@@ -7,7 +7,8 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "event_reminder")
 public class EventReminder {
 
-    public EventReminder(String eventName, String location, String notes, int time, int date) {
+    public EventReminder(int eventID, String eventName, String location, String notes, int time, int date) {
+        this.eventID=eventID;
         this.eventName = eventName;
         this.location = location;
         this.notes = notes;
@@ -16,7 +17,7 @@ public class EventReminder {
     }
 
     @ColumnInfo(name = "event_id")
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey
     public int eventID;
 
     @ColumnInfo(name="event_name")
