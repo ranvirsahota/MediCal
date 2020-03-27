@@ -6,7 +6,8 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "prescription_reminders")
 public class PrescriptionReminders {
 
-    public PrescriptionReminders(String medicationName, int dosage, int time, int date) {
+    public PrescriptionReminders(int eventID, String medicationName, int dosage, int time, int date) {
+        this.eventID=eventID;
         this.medicationName = medicationName;
         this.dosage = dosage;
         this.time = time;
