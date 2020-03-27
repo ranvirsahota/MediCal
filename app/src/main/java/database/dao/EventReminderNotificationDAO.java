@@ -11,6 +11,6 @@ import database.views.EventReminderNotification;
 @Dao
 public interface EventReminderNotificationDAO {
 
-    @Query("SELECT * FROM EventReminderNotification WHERE EventReminderNotification.date = date")
-    LiveData<List<EventReminderNotification>> getEventsOnSelectedDate(int date);
+    @Query("SELECT * FROM EventReminderNotification")
+    LiveData<List<EventReminderNotification>> getEventsOnSelectedDate();
 }

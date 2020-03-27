@@ -20,7 +20,7 @@ public class MediCalRepository {
         MedicCalRoomDatabase db = MedicCalRoomDatabase.getDatabase(application);
         eventReminderNotificationDAO = db.eventReminderNotificationDAO;
         //Must find a way to pass date
-        eventsForSelectedDate = eventReminderNotificationDAO.getEventsOnSelectedDate(0);
+        eventsForSelectedDate = eventReminderNotificationDAO.getEventsOnSelectedDate();
     }
     public LiveData<List<EventReminderNotification>> getUsersEvents() { return eventsForSelectedDate; }
 
