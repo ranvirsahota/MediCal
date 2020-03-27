@@ -79,14 +79,15 @@
         android:id="@+id/imageButton5"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:contentDescription="@string/add_event_btn"
+        android:onClick="createBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.304"
-        app:srcCompat="@drawable/create_event"
-        android:contentDescription="@string/add_event_btn" />
+        app:srcCompat="@drawable/create_event" />
 
     <ImageButton
         android:id="@+id/imageButton6"

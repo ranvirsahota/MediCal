@@ -81,6 +81,12 @@ public class homePage extends AppCompatActivity {
         startActivity(calBtn);
     }
 
+    public void createBtn(View view) {
+
+        Intent createBtn = new Intent(homePage.this, CreateEvent.class);
+        startActivity(createBtn);
+    }
+
     public void signIn(View view) {
 
         Intent signIn = new Intent(homePage.this, Login.class);
