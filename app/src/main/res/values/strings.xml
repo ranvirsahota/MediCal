@@ -44,4 +44,13 @@
     <string name="inputNotes">Input any notes here</string>
     <string name="snooze">Snooze</string>
     <string name="cancel_alarm">Cancel Alarm</string>
+    <string name="Accessibility">Accessibility</string>
+    <string name="Selected">Selected</string>
+    <string name="Change">Change</string>
+    <string name="ExamplePara">This is a sample text paragraph. Text at this size should be easy to read. To adjust text please click on one of the above buttons.Text size can be changed back at anytime by returning to the accessibility page.</string>
+    <string name="ReturnButton">Return</string>
+    <string name="regular">Regular</string>
+    <string name="Large">Large</string>
+    <string name="Extra">Extra Large</string>
+    <string name="ChangeFontSize">Change Font Size</string>
 </resources>

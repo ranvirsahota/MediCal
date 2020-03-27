@@ -74,7 +74,11 @@ public class homePage extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
+    public void accessibilityButton(View view) {
 
+        Intent accessButton = new Intent(homePage.this, Accessibility.class);
+        startActivity(accessButton);
+    }
     public void calendarBtn(View view) {
 
         Intent calBtn = new Intent(homePage.this, Calender.class);
@@ -92,5 +96,7 @@ public class homePage extends AppCompatActivity {
         Intent signIn = new Intent(homePage.this, Login.class);
         startActivity(signIn);
     }
+
+
 
 }

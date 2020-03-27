@@ -149,14 +149,15 @@
         android:id="@+id/imageButton7"
         android:layout_width="100dp"
         android:layout_height="97dp"
+        android:contentDescription="@string/share_cal"
+        android:onClick="accessibilityButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.586"
-        app:srcCompat="@drawable/share_calendar"
-        android:contentDescription="@string/share_cal" />
+        app:srcCompat="@drawable/share_calendar" />
 
     <TextView
         android:id="@+id/textView13"
@@ -176,14 +177,30 @@
         android:id="@+id/imageButton8"
         android:layout_width="100dp"
         android:layout_height="66dp"
+        android:contentDescription="@string/accessibility"
+        android:onClick="accessibilityButton"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.824"
-        app:srcCompat="@drawable/accessibility"
-        android:contentDescription="@string/accessibility" />
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/accessibility" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="66dp"
+        android:contentDescription="@string/accessibility"
+        android:onClick="accessibilityButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822"
+        app:srcCompat="@drawable/accessibility" />
 
     <TextView
         android:id="@+id/textView14"
