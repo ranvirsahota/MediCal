@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".UI.Accessibility"/>
-        <activity android:name=".UI.CreateEvent">
+        <activity android:name=".UI.homePage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +24,7 @@
         <activity android:name=".UI.Login" />
         <activity android:name=".UI.Calender" />
         <activity android:name=".UI.EditEvent" />
-        <activity android:name=".UI.homePage" />
+        <activity android:name=".UI.CreateEvent" />
     </application>
 
 </manifest>

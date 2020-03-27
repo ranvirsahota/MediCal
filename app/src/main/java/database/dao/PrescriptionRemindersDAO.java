@@ -8,6 +8,7 @@ import androidx.room.Update;
 
 import database.entity.data.PrescriptionReminders;
 
+
 @Dao
 public interface PrescriptionRemindersDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
