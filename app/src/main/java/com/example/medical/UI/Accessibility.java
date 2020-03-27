@@ -21,8 +21,16 @@ public class Accessibility extends AppCompatActivity {
 
     public void ChangeTextReg(View v)
     {
+        /*In order to change text size I have seperated them into three catergories, header, buttons and mainbody
+         These will then have there id's stored in an array so I can refernce them later
+        */
         Button ChangeReg = (Button) findViewById(R.id.button10);
         int[] ButtonIDArray = new int[]
+                /*
+                The Id's commented out below are the correct id's for each catergory for the other pages, I need to use intents to pass
+                the updated text size back to these other activities
+                */
+
                 /*{R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};*/
                 {R.id.button7,R.id.button8,R.id.button9,R.id.button10};
         int[] HeaderIDArray = new int[]
@@ -34,6 +42,8 @@ public class Accessibility extends AppCompatActivity {
                         R.id.textView11,R.id.textView12,R.id.textView13,R.id.textView14,R.id.textView15,R.id.textView16,R.id.textView17,R.id.textView18,R.id.textView19,R.id.textView20,
                         R.id.textView21,R.id.textView23,R.id.textView24};*/
 
+        
+        /*By using a for each loop I am able to go through the arrays and easily change all the sizes with one click of the button*/
         for (int value : ButtonIDArray) {
             Button but = (Button) findViewById(value);
             but.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
@@ -83,6 +93,8 @@ public class Accessibility extends AppCompatActivity {
     public void ChangeTextExtra(View v)
     {
         Button ChangeExtra = (Button) findViewById(R.id.button7);
+        
+ 
         int[] ButtonIDArray = new int[]
                 /*{R.id.button, R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button9,R.id.button10};*/
                 {R.id.button7,R.id.button8,R.id.button9,R.id.button10};
