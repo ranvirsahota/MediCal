@@ -39,9 +39,9 @@ android {
         androidTestImplementation 'androidx.test:rules:1.2.0'
 
         //Room components
-        implementation "androidx.room:room-runtime:$room_verrsion"
-        annotationProcessor "androidx.room:room-compiler:$room_verrsion"
-        androidTestImplementation "androidx.room:room-testing:$room_verrsion"
+        implementation "androidx.room:room-runtime:$room_version"
+        annotationProcessor "androidx.room:room-compiler:$room_version"
+        androidTestImplementation "androidx.room:room-testing:$room_version"
 
         //Lifecycle components
         implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
