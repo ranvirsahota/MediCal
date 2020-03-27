@@ -2,23 +2,18 @@
 
 package com.example.medical.UI;
 
-import androidx.annotation.Nullable;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
 import com.example.medical.R;
-import android.view.View;
-import android.widget.Toast;
-
-import java.util.List;
 
 import viewmodel.EventViewModel;
-import database.views.EventReminderNotification;
 
 public class ListOfEvents extends AppCompatActivity {
     private EventViewModel eventViewModel;
@@ -34,18 +29,14 @@ public class ListOfEvents extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        //need to look into why this doesnt work
         eventViewModel = new ViewModelProvider(this).get(EventViewModel.class);
-        eventViewModel.getEventsForSelectedDate().observe(this, new Observer<List<EventReminderNotification>>() {
-            @Override
-            public void onChanged(@Nullable final List<EventReminderNotification> eventReminderNotifications) {
-                // Update the cached copy of the words in the adapter.
-                adapter.setEvents(eventReminderNotifications);
-            }
+        eventViewModel.getEventsForSelectedDate().observe(this, eventReminderNotifications -> {
+            // Update the cached copy of the words in the adapter.
+            adapter.setEvents(eventReminderNotifications);
         });
     }
 /*
-    //for creating new event
+    //To Create a new event
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == NEW_EVENT_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
