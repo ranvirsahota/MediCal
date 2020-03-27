@@ -11,7 +11,7 @@ import database.entity.data.EventReminder;
 @Dao
 public interface EventReminderDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert(EventReminderDAO eventReminder);
+    void insert(EventReminder eventReminder);
     @Update()
     void update(EventReminder eventReminder);
     @Delete()
